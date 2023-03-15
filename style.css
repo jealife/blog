@@ -5,33 +5,15 @@
 
 body {
   background-color: #000;
+  scroll-behavior: smooth;
 }
 
-.ag-format-container{
-  margin-top: 2rem;
-
-}
-.ag-courses_box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-
-  padding: 50px 0;
-}
 
 .ag-courses_item {
   -ms-flex-preferred-size: calc(33.33333% - 30px);
   flex-basis: calc(33.33333% - 30px);
-
   margin: 0 15px 30px;
-
   overflow: hidden;
-
   border-radius: 28px;
 }
 
@@ -39,16 +21,18 @@ body {
   display: block;
   padding: 30px 20px;
   background-color: #121212;
-
+  border-radius: 20px;
   overflow: hidden;
-
-  position: relative;
+  text-decoration: none;
+  transition: 0.5s;
 }
 
 .ag-courses-item_link:hover,
 .ag-courses-item_link:hover .ag-courses-item_date {
   text-decoration: none;
   color: #fff;
+  transition: 0.5s;
+  box-shadow: rgba(159, 203, 240, 0.818) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
 }
 
 .ag-courses-item_link:hover .ag-courses-item_bg {
@@ -80,7 +64,6 @@ body {
 .ag-courses-item_date-box {
   font-size: 18px;
   color: #fff;
-
   z-index: 2;
   position: relative;
 }
@@ -168,7 +151,7 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 769px) {
   .ag-format-container {
     width: 96%;
   }
@@ -176,8 +159,7 @@ body::-webkit-scrollbar-thumb {
 
 @media only screen and (max-width: 480px) {
   .ag-courses_item {
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;flex-direction: column;
   }
 
   .ag-courses-item_title {
@@ -189,6 +171,8 @@ body::-webkit-scrollbar-thumb {
 
   .ag-courses-item_link {
     padding: 22px 40px;
+    box-shadow: rgba(159, 203, 240, 0.818) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+
   }
 
   .image-item {
@@ -199,4 +183,19 @@ body::-webkit-scrollbar-thumb {
   .ag-courses-item_date-box {
     font-size: 16px;
   }
+  
 }
+/* @media only screen and (max-width: 600px) {
+  .ag-courses_item{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 50px 0;
+    flex-direction: column;
+  }
+} */
