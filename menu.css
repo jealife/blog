@@ -20,6 +20,9 @@ nav{
     justify-content: center;
     align-items: center;
     background: #111;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.25);
     transition: 0.5s;
 }
 
