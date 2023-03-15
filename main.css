@@ -122,7 +122,7 @@ body {
     min-height: 100vh;
 
     /* gradient background*/
-    background: linear-gradient(45deg, rgba(0, 212, 255, 1) 0%, rgba(11, 3, 45, 1) 100%);
+    background: linear-gradient(45deg, rgb(254, 255, 255) 0%, rgb(0, 139, 214) 100%);
 
     /* photo background */
     background-size: cover;
