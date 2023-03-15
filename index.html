@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Blog</title>
+  <link rel='stylesheet' href='https://rawcdn.githack.com/SochavaAG/example-mycode/master/_common/css/reset.css'>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="menu.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body id="body">
+  <!-- partial:index.partial.html -->
+  <header id="nav-bar">
+    <nav class="nav-bar">
+    <div class="fullPageMenu" id="nav">
+      <div class="banner">
+          <img src="https://unsplash.it/2000" alt="image">
+      </div>
+      <div class="nav">
+          <ul>
+              <li><a href="#" data-text="Home">Blog</a></li>
+              <li><a href="#" data-text="About">About</a></li>
+              <li><a href="#" data-text="Services">Services</a></li>
+              <li><a href="#" data-text="Contact">Contact</a></li>
+          </ul>
+      </div>
+  </div>
+  <span class="menuicon" id="toggle" onclick="menuToggle()"></span>
+  
+    </nav>
+  </header>
+  <main>
+    <div class="ag-format-container">
+      <div class="ag-courses_box">
+  
+        <!--  -->
+        <div class="ag-courses_item" >
+  
+  
+          <a href="#" class="ag-courses-item_link" data-aos="fade-left">
+            <div class="ag-courses-item_bg">
+            </div>
+  
+            <div class="ag-courses-item_title">
+              <div class="image-item"></div>
+              UI/Web&amp;Graph design for teenagers 11-17&#160;years old
+            </div>
+            <div class="ag-courses-item_date-box">
+              <span class="ag-courses-item_date">
+                04.11.2022
+              </span>
+              <div class="content">
+                <p>
+                  Lorem ipsum is placeholder text commonly used in the graphic,
+                  print, and publishing ...
+  
+                </p>
+              </div>
+            </div>
+          </a>
+  
+        </div>
+        <!--  -->
+        <div class="ag-courses_item" >
+  
+  
+          <a href="#" class="ag-courses-item_link" data-aos="fade-left">
+            <div class="ag-courses-item_bg">
+            </div>
+  
+            <div class="ag-courses-item_title">
+              <div class="image-item"></div>
+              UI/Web&amp;Graph design for teenagers 11-17&#160;years old
+            </div>
+            <div class="ag-courses-item_date-box">
+              <span class="ag-courses-item_date">
+                04.11.2022
+              </span>
+              <div class="content">
+                <p>
+                  Lorem ipsum is placeholder text commonly used in the graphic,
+                  print, and publishing ...
+  
+                </p>
+              </div>
+            </div>
+          </a>
+  
+        </div>
+        <!--  -->
+        <div class="ag-courses_item" >
+  
+  
+          <a href="#" class="ag-courses-item_link" data-aos="fade-left">
+            <div class="ag-courses-item_bg">
+            </div>
+  
+            <div class="ag-courses-item_title">
+              <div class="image-item"></div>
+              UI/Web&amp;Graph design for teenagers 11-17&#160;years old
+            </div>
+            <div class="ag-courses-item_date-box">
+              <span class="ag-courses-item_date">
+                04.11.2022
+              </span>
+              <div class="content">
+                <p>
+                  Lorem ipsum is placeholder text commonly used in the graphic,
+                  print, and publishing ...
+  
+                </p>
+              </div>
+            </div>
+          </a>
+  
+        </div>
+        <!--  -->
+        <div class="ag-courses_item" >
+  
+  
+          <a href="#" class="ag-courses-item_link" data-aos="fade-left">
+            <div class="ag-courses-item_bg">
+            </div>
+  
+            <div class="ag-courses-item_title">
+              <div class="image-item"></div>
+              UI/Web&amp;Graph design for teenagers 11-17&#160;years old
+            </div>
+            <div class="ag-courses-item_date-box">
+              <span class="ag-courses-item_date">
+                04.11.2022
+              </span>
+              <div class="content">
+                <p>
+                  Lorem ipsum is placeholder text commonly used in the graphic,
+                  print, and publishing ...
+  
+                </p>
+              </div>
+            </div>
+          </a>
+  
+        </div>
+       
+  
+      </div>
+    </div>
+    <!-- partial -->
+  </main>
+
+
+  <script>
+    AOS.init();
+  </script>
+  <script  src="./script.js"></script>
+  <script>
+    let scrollpos = window.scrollY;
+
+    const header = document.querySelector(".nav-bar");
+
+    //How many pixels you need to scroll to add a class. You can change the value
+    const scrollChange = 1;
+
+    //The function that will add the class
+    const add_class_on_scroll = () => header.classList.add("fixed");
+
+    //Tracking a "scroll" event
+    window.addEventListener('scroll', function () {
+        scrollpos = window.scrollY;
+
+        //If we scrolled more than we specified in the scrollChange variable, the add class function is executed
+        if (scrollpos >= scrollChange) { add_class_on_scroll() }
+        else {
+            header.classList.remove('fixed');
+        }
+    })
+</script>
+</body>
+
+</html>
