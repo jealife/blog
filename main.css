@@ -68,7 +68,8 @@ article img {
 }
 
 .article-body {
-    padding: 24px;
+    padding: 1rem 0 ;
+
 }
 
 article a {
@@ -191,4 +192,8 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-thumb {
     border-radius: 50px;
     background: #7c9885;
+}
+p{
+    color: aliceblue;
+    text-justify: distribute;
 }
