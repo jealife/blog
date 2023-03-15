@@ -141,3 +141,14 @@ nav{
         display: none;
     }
 }
+
+.title-section{
+    height: 3rem;
+    display: grid;
+    place-items: center;
+    color: #fff;
+    text-transform:uppercase;
+    justify-content: center;
+    margin: 1rem 0 2rem 0;
+}
+
