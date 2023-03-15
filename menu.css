@@ -1,15 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Teko:wght@400;500;600;700&display=swap');
 
-nav{
-   position: absolute;
-   z-index: 2;
+nav {
+    position: absolute;
+    z-index: 2;
 }
-.main{
+
+.main {
     display: grid;
     place-items: center;
-   margin: 5.5rem 1rem ;
+    margin: 5.5rem 1rem;
 }
+
 .fullPageMenu {
     position: fixed;
     top: -100%;
@@ -111,9 +113,14 @@ nav{
     color: fff;
 }
 
+ion-icon {
+    font-size: 64px;
+}
+
 .menuicon {
     border-radius: 50%;
-    background: #fff url(https://i.postimg.cc/25t1dMY5/pngegg-1.png);
+    color: #fff;
+    background: #d4feff8a url(menu-sharp.svg);
     position: fixed;
     top: 20px;
     right: 20px;
@@ -126,12 +133,13 @@ nav{
 }
 
 .menuicon.active {
-    background: #fff url(https://i.postimg.cc/k4rb3zpp/pngwave.png);
+    background: #e1fcff3b url(close-sharp.svg);
     background-size: 40px;
     background-repeat: no-repeat;
     background-position: 10px;
 }
-.fixed{
+
+.fixed {
     background-color: aquamarine;
     height: max-content;
 }
@@ -142,13 +150,12 @@ nav{
     }
 }
 
-.title-section{
+.title-section {
     height: 3rem;
     display: grid;
     place-items: center;
     color: #fff;
-    text-transform:uppercase;
+    text-transform: uppercase;
     justify-content: center;
     margin: 1rem 0 2rem 0;
 }
-
