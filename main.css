@@ -186,12 +186,12 @@ body {
 
 body::-webkit-scrollbar {
     width: 0.6rem;
-    background-color: #b5b682;
+    background-color: #5d86af;
 }
 
 body::-webkit-scrollbar-thumb {
     border-radius: 50px;
-    background: #7c9885;
+    background: #159dca;
 }
 p{
     color: aliceblue;
