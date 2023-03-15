@@ -5,9 +5,6 @@ nav{
    position: absolute;
    z-index: 2;
 }
-body .active{
-    overflow-y: hidden;
-}
 .fullPageMenu {
     position: fixed;
     top: -100%;
